@@ -1,19 +1,37 @@
 # depslib dependency file v1.0
-1495569338 source:/home/michal/Pulpit/window/main.cpp
+1495576959 source:/home/michal/Pulpit/window/main.cpp
 	<iostream>
 	"window.h"
+	"operating_sys.h"
 
-1495569404 /home/michal/Pulpit/window/window.h
+1495575016 /home/michal/Pulpit/window/window.h
 	<iostream>
 	<stdio.h>
 	<string.h>
 	<assert.h>
 
-1495569404 source:/home/michal/Pulpit/window/window.cpp
+1495577045 source:/home/michal/Pulpit/window/window.cpp
+	<iostream>
+	<vector>
+	"window.h"
+
+1495576326 /home/michal/Pulpit/window/window.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
 	<vector>
 	<assert.h>
 	"window.h"
+
+1495576864 /home/michal/Pulpit/window/operating_sys.h
+	<iostream>
+
+1495577245 source:/home/michal/Pulpit/window/operating_sys.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<vector>
+	<assert.h>
+	"window.h"
+	"operating_sys.h"
 

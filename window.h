@@ -14,12 +14,10 @@ class Component
     int y; //wspolrzedna y komponentu
 
     public:
-        virtual void click()=0;
         Component(int x_axe=0, int y_axe=0): x(x_axe),y(y_axe){}//konstruktor
         ~Component(){}//destruktor
-
+        virtual void click()=0;
 };
-//vector < Component > Data; //przechowuje dodane komponenty
 //-------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------
 
@@ -38,6 +36,7 @@ class Text :public Component
         Component(x_axe,y_axe), text_show(text_p), length(length_p), high(high_p){}
 
         ~Text(){}
+        virtual void click(){};
 };
 
 

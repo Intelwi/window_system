@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="operating_sys.cpp" />
+		<Unit filename="operating_sys.h" />
 		<Unit filename="window.cpp" />
 		<Unit filename="window.h" />
 		<Extensions>

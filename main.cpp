@@ -1,10 +1,10 @@
 #include <iostream>
 #include "window.h"
+#include "operating_sys.h"
 using namespace std;
 
 int main()
 {
-
-    cout << "Hello world!" << endl;
+   fun_manage();
     return 0;
 }
