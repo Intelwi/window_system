@@ -1,15 +1,19 @@
 # depslib dependency file v1.0
-1495563019 source:/home/michal/Pulpit/window/main.cpp
+1495569338 source:/home/michal/Pulpit/window/main.cpp
 	<iostream>
 	"window.h"
 
-1495567657 /home/michal/Pulpit/window/window.h
-	<iostream>
-
-1495564160 source:/home/michal/Pulpit/window/window.cpp
+1495569404 /home/michal/Pulpit/window/window.h
 	<iostream>
 	<stdio.h>
 	<string.h>
+	<assert.h>
+
+1495569404 source:/home/michal/Pulpit/window/window.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<vector>
 	<assert.h>
 	"window.h"
 

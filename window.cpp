@@ -1,17 +1,35 @@
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
+#include <vector>
 #include <assert.h>
 #include "window.h"
 
-void fun_iter(Component *wsk){//operownie wskaźnikiem na dowolny komponent
+vector < Component* > Data; //przechowuje dodane komponenty
+
+void fun_manage_iter(Component *wsk){//operownie wskaźnikiem na dowolny komponent
 
 
 }
 
+void add_comp()
+{
+
+
+}
+
+void delete_comp()
+{
+
+
+}
+
+void click_comp()
+{
 
 
 
+}
 
 
 

@@ -1,9 +1,11 @@
 #include <iostream>
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
 using namespace std;
 
 
 //-------------KOMPONENT----------------------------------------------------------------------------------
-
 
 class Component
 {
@@ -17,6 +19,7 @@ class Component
         ~Component(){}//destruktor
 
 };
+//vector < Component > Data; //przechowuje dodane komponenty
 //-------------------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------
 
@@ -52,6 +55,6 @@ class Button :public Text
 
         virtual void click()
         {
-            std::cout<<"Button clicked!";
+            cout<<"Button clicked!";
         }
 };
