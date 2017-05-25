@@ -1,10 +1,12 @@
 #include <iostream>
+int input_int();
+
 void choose_component();
 
 void add_comp();//dodanie komponentu
 
 template<class Typ>//utworzenie komponentu
-void create();
+void create(int ans);
 
 void delete_comp();
 

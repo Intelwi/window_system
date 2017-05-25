@@ -47,7 +47,7 @@ class Button :public Text
 {
 
    public:
-        Button (int x_axe=0, int y_axe=0, string tekst_p = "Click Button", int length_p=50, int high_p=30):
+        Button (int x_axe=0, int y_axe=0, string tekst_p = "Click Button", int length_p=20, int high_p=15):
         Text(x_axe,y_axe,tekst_p,length_p,high_p){}
 
         ~Button(){}
@@ -55,5 +55,31 @@ class Button :public Text
         virtual void click()
         {
             cout<<"Button clicked!";
+        }
+};
+
+//-------------CHECKBOX----------------------------------------------------------------------------------
+
+class Checkbox :public Text// a moze moze dziedziczyc po przycisku?
+{
+    bool if_ticked; //info czy jest zaznaczony
+   public:
+        Checkbox (int x_axe=0, int y_axe=0, string tekst_p = "Tick Checkbox", int length_p=8, int high_p=8):
+        Text(x_axe,y_axe,tekst_p,length_p,high_p){}
+
+        ~Checkbox(){}
+
+        virtual void click()
+        {
+            if (if_ticked)
+            {
+                if_ticked=false;
+                cout<<"Checkbox unticked!";
+            }
+            else
+            {
+                if_ticked=true;
+                cout<<"Checkbox ticked!";
+            }
         }
 };
