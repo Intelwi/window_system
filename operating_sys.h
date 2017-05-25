@@ -1,3 +1,4 @@
+//Plika zawiera deklaracje funkcji z pliku operating_sys.cpp
 #include <iostream>
 int input_int();
 
@@ -10,7 +11,7 @@ void create(int ans);
 
 void delete_comp();
 
-void click_comp();
+void click_comp();//funkcja klikania
 
 void fun_manage();//operownie wskaźnikiem na dowolny komponent
 

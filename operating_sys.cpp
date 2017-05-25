@@ -1,3 +1,4 @@
+//Plik zawiera funkcje obslugujace interfejs urzytkownika
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
@@ -7,7 +8,8 @@
 #include "operating_sys.h"
 
 
-vector < Component* > data; //przechowuje dodane komponenty
+vector <Component*> data; //przechowuje dodane komponenty
+vector <Component*>::reverse_iterator iter; //iterator do kontenera
 
 int input_int()
 {
@@ -32,19 +34,16 @@ void fun_manage()//interfejs użytkownika -> akcja do wykonania
         if(ans==1)
         {
             add_comp();//dodanie komponentu
-            break;
         }
 
         else if(ans==2)
         {
             delete_comp();//usunięcie komponentu
-            break;
         }
 
         else if(ans==3)
         {
             click_comp();//kliknięcie na komponent
-            break;
         }
 
         else continue;
@@ -89,14 +88,14 @@ void choose_component(){//interfejs użytkownika -> komponent do wybrania
 
 template<class Typ>//utworzenie komponentu
 void create(int ans){
-    int x_1=0, y_1=0;
+    int x_axe=0, y_axe=0;
    // if (ans==1)//tworzenie tekstu
    // {
         std::cout<<"Podaj wspołrzedna x: "<<endl;//tworzenie każdego obiektu nowego
-        x_1=input_int();
+        x_axe=input_int();
         std::cout<<"Podaj wspołrzedna y: "<<endl;
-        y_1=input_int();
-        Component *ptr = new Typ(x_1,y_1);
+        y_axe=input_int();
+        Component *ptr = new Typ(x_axe,y_axe);
         data.push_back(ptr);
    // }
 
@@ -115,23 +114,26 @@ void create(int ans){
 }
 
 //------------------------------------------------------------------------
-//-------------KLIKANIE_KOMPONENTU----------------------------------------
+//-------------KLIKANIE_NA_KOMPONENT----------------------------------------
 
 void click_comp()
 {
+    int x_axe=0, y_axe=0;
+    std::cout<<"Podaj wspolrzedna x:"<<endl;
+    x_axe=input_int();
+    std::cout<<"Podaj wspolrzedna y"<<endl;
+    y_axe=input_int();
 
-
-
+    for(iter=data.rbegin();iter!=data.rend();++iter)//przeszukanie kontenera od tylu - szukanie najnowszych elementow
+    {
+        if((*iter)->check(x_axe,y_axe))
+        {
+            (*iter)->click();
+            return;
+        }
+    }
+    std::cout<<endl<<"error: component not found"<<endl<<endl;
 }
-
-
-
-
-
-
-
-
-
 
 
 //--------------------------------------------------------------------------
