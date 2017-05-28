@@ -2,6 +2,8 @@
 #include <iostream>
 int input_int();
 
+void input_int_ex(int *ans);
+
 void choose_component();
 
 void add_comp();//dodanie komponentu

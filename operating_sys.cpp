@@ -4,6 +4,7 @@
 #include <string.h>
 #include <vector>
 #include <assert.h>
+#include <memory>
 #include "window.h"
 #include "operating_sys.h"
 
@@ -11,16 +12,33 @@
 vector <Component*> data; //przechowuje dodane komponenty
 vector <Component*>::reverse_iterator iter; //iterator do kontenera
 
-int input_int()
+void input_int_ex(int* ans)//wprowadzenie liczby
 {
-    int ans;
-    std::cin>>ans;
+    std::cin>>*ans;
     while(!std::cin)
         {
             std::cin.clear();
             std::cin.sync();
-            std::cin>>ans;
+            std::cin>>*ans;
         }
+    if (*ans>2000 || *ans<0) //sprawdzenie czy nie wychodzi poza okno
+    {
+        throw ans;
+    }
+}
+
+int input_int()//obsługa wprowadzania z wyjatkami
+{
+    int ans=0;
+    try
+    {
+        input_int_ex(&ans);//proba wczytania
+    }
+    catch (int *ans)//gdy wczytano zla wspolrzedna
+    {
+        std::cout<<"error: variable exceeded accessible range"<<endl<<"Prosze wpisac ponownie:"<<endl;
+        input_int_ex(ans);
+    }
     return ans;
 }
 
@@ -28,7 +46,7 @@ void fun_manage()//interfejs użytkownika -> akcja do wykonania
 {
     int ans;
     while(1){
-        std::cout<<"Wybierz akcję do wykonania:"<<endl<<"1.Dodaj komponent"<<endl<<"2.Usun komponent"<<endl<<"3.Kliknij"<<endl;
+        std::cout<<"Wybierz akcję do wykonania:"<<endl<<"1.Dodaj komponent"<<endl<<"2.Usun komponent"<<endl<<"3.Kliknij"<<endl<<"4.Zakoncz"<<endl;
         ans = input_int();
 
         if(ans==1)
@@ -44,6 +62,11 @@ void fun_manage()//interfejs użytkownika -> akcja do wykonania
         else if(ans==3)
         {
             click_comp();//kliknięcie na komponent
+        }
+
+        else if(ans==4)
+        {
+            return;
         }
 
         else continue;
@@ -65,6 +88,7 @@ void choose_component(){//interfejs użytkownika -> komponent do wybrania
         std::cout<<"Wybierz komponent do edycji:"<<endl<<"1.Pole z tekstem"<<endl<<"2.Przycisk"<<endl<<"3.Checkbox"<<endl;
 
         ans = input_int();
+
         if(ans==1)
         {
             create<Text>(ans);//stworzenie komponentu
@@ -140,6 +164,7 @@ void click_comp()
 
 void delete_comp()
 {
+
 
 
 }

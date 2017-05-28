@@ -23,10 +23,10 @@
 	<assert.h>
 	"window.h"
 
-1495736917 /home/michal/Pulpit/window/operating_sys.h
+1495989569 /home/michal/Pulpit/window/operating_sys.h
 	<iostream>
 
-1495739950 source:/home/michal/Pulpit/window/operating_sys.cpp
+1495989719 source:/home/michal/Pulpit/window/operating_sys.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>
