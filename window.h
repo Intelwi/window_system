@@ -19,7 +19,7 @@ class Component
     public:
         Component(int x_axe=0, int y_axe=0, int length_p=50, int high_p=30):
         x(x_axe),y(y_axe),length(length_p),high(high_p){}//konstruktor
-        ~Component(){}//destruktor
+        virtual ~Component(){}//destruktor
         virtual void click()=0;
         int check(int x_axe, int y_axe);//sprawdzenie gdzie kliknieto
 };
@@ -38,7 +38,7 @@ class Text :public Component
         Text (int x_axe=0, int y_axe=0, int length_p=50, int high_p=30, string text_p = "Hello word!"):
         Component(x_axe,y_axe,length_p,high_p), text_show(text_p){}
 
-        ~Text(){}
+        virtual ~Text(){}
         virtual void click();
 };
 

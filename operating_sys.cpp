@@ -4,13 +4,17 @@
 #include <string.h>
 #include <vector>
 #include <assert.h>
-#include <memory>
 #include "window.h"
 #include "operating_sys.h"
-
+!!!
+//wyjątki dac:
+//nie można usunąć jak nie ma elementow
+//nie mozna kliknac jak nie ma elementow
+!!!
 
 vector <Component*> data; //przechowuje dodane komponenty
 vector <Component*>::reverse_iterator iter; //iterator do kontenera
+vector <Component*>::iterator iter1; //iterator do kontenera do usuwania
 
 void input_int_ex(int* ans)//wprowadzenie liczby
 {
@@ -164,7 +168,23 @@ void click_comp()
 
 void delete_comp()
 {
+    iter1 = data.end();
+    int x_axe=0, y_axe=0;
+    std::cout<<"Podaj wspolrzedna x:"<<endl;
+    x_axe=input_int();
+    std::cout<<"Podaj wspolrzedna y"<<endl;
+    y_axe=input_int();
 
-
-
+    while (iter1 != data.begin())//przeszukanie kontenera od tylu - szukanie najnowszych elementow
+    {
+        --iter1;
+        if((*iter1)->check(x_axe,y_axe))
+        {
+            delete (*iter1);
+            data.erase(iter1);
+            std::cout<<endl<<"Component erased succesfully!"<<endl<<endl;
+            return;
+        }
+    }
+    std::cout<<endl<<"error: component not found"<<endl<<endl;
 }
