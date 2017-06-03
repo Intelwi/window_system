@@ -9,7 +9,7 @@ void choose_component();
 void add_comp();//dodanie komponentu
 
 template<class Typ>//utworzenie komponentu
-void create(int ans);
+void create();
 
 void delete_comp();//kasowanie komponentu
 

@@ -71,3 +71,20 @@ class Checkbox :public Text// a moze moze dziedziczyc po przycisku?
 
         virtual void click();
 };
+
+
+//----------------INPUT_TABLE-------------------------------------------------------------------------------
+
+class Input_table :public Text
+{
+    string input_txt;
+
+   public:
+        Input_table (int x_axe=0, int y_axe=0, int length_p=30, int high_p=10,string tekst_p = "Type sentence"):
+        Text(x_axe,y_axe,length_p,high_p,tekst_p){}
+
+        ~Input_table(){}
+
+        virtual void click();
+        void type_in();
+};

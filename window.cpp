@@ -35,3 +35,15 @@ void Checkbox::click()//funkcja klikajaca na obiekt
         std::cout<<endl<<"Checkbox ticked!"<<endl<<endl;
     }
 }
+
+void Input_table::click()//funkcja klikajaca na obiekt
+{
+    std::cout<<"Current sentence: "<<endl<<input_txt<<endl<<"Type new sentence:"<<endl;
+    type_in();
+}
+
+void Input_table::type_in()
+{
+    std::cin>>input_txt;
+    std::cout<<endl;
+}

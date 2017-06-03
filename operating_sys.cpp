@@ -8,6 +8,8 @@
 #include "window.h"
 #include "operating_sys.h"
 
+//dodac pole dowpisywania tekstu
+//dodac przesuwanie komponentu po np podwojnym kliknieciu
 
 vector <Component*> data; //przechowuje dodane komponenty
 vector <Component*>::iterator iter; //iterator do kontenera do usuwania
@@ -87,25 +89,31 @@ void add_comp()//dodanie komponentu
 void choose_component(){//interfejs użytkownika -> komponent do wybrania
      int ans;
     while(1){
-        std::cout<<"Wybierz komponent do edycji:"<<endl<<"1.Pole z tekstem"<<endl<<"2.Przycisk"<<endl<<"3.Checkbox"<<endl;
+        std::cout<<"Wybierz komponent do edycji:"<<endl<<"1.Pole z tekstem"<<endl<<"2.Przycisk"<<endl<<"3.Checkbox"<<endl<<"4.Input label"<<endl;
 
         ans = input_int();
 
         if(ans==1)
         {
-            create<Text>(ans);//stworzenie komponentu
+            create<Text>();//stworzenie komponentu
             break;
         }
 
         else if(ans==2)
         {
-            create<Button>(ans);//stworzenie komponentu
+            create<Button>();//stworzenie komponentu
             break;
         }
 
         else if(ans==3)
         {
-            create<Checkbox>(ans);
+            create<Checkbox>();
+            break;
+        }
+
+        else if(ans==4)
+        {
+            create<Input_table>();
             break;
         }
         else continue;
@@ -113,7 +121,7 @@ void choose_component(){//interfejs użytkownika -> komponent do wybrania
 }
 
 template<class Typ>//utworzenie komponentu
-void create(int ans){
+void create(){
     int x_axe=0, y_axe=0;
 
         std::cout<<"Podaj wspołrzedna x: "<<endl;//tworzenie każdego obiektu nowego
