@@ -1,17 +1,13 @@
 //Plik zawiera funkcje obslugujace interfejs urzytkownika
 #include <iostream>
+#include <limits>
 #include <stdio.h>
 #include <string.h>
 #include <vector>
 #include <assert.h>
 #include "window.h"
 #include "operating_sys.h"
-//!!!
-//wyjątki dac:
-//nie można usunąć jak nie ma elementow
-//nie mozna kliknac jak nie ma elementow
-//destrukcja obiektow
-//!!!
+
 
 vector <Component*> data; //przechowuje dodane komponenty
 vector <Component*>::iterator iter; //iterator do kontenera do usuwania
@@ -19,16 +15,10 @@ vector <Component*>::iterator iter; //iterator do kontenera do usuwania
 void input_int_ex(int* ans)//wprowadzenie liczby
 {
     std::cin>>*ans;
-    while(!std::cin)
-        {
-            std::cin.clear();
-            std::cin.sync();
-            std::cin>>*ans;
-        }
-    if (*ans>2000 || *ans<0) //sprawdzenie czy nie wychodzi poza okno
-    {
-        throw ans;
-    }
+    if(!std::cin) throw char('t');
+
+    //sprawdzenie czy nie wychodzi poza okno
+    if (*ans>2000 || *ans<0) throw ans;
 }
 
 int input_int()//obsługa wprowadzania z wyjatkami
@@ -42,6 +32,13 @@ int input_int()//obsługa wprowadzania z wyjatkami
     {
         std::cout<<"error: variable exceeded accessible range"<<endl<<"Prosze wpisac ponownie:"<<endl;
         input_int_ex(ans);
+    }
+    catch (...)
+    {
+         std::cin.clear();
+         std::cin.ignore(numeric_limits<streamsize>::max(),'\n');
+         std::cout<<"error: variable not correct"<<endl<<"Prosze wpisac ponownie:"<<endl;
+         input_int_ex(&ans);
     }
     return ans;
 }
@@ -134,26 +131,33 @@ void click_comp()
 {
     iter = data.end();
     int x_axe=0, y_axe=0;
-    std::cout<<"Podaj wspolrzedna x:"<<endl;
-    x_axe=input_int();
-    std::cout<<"Podaj wspolrzedna y"<<endl;
-    y_axe=input_int();
-
-    while (iter != data.begin())//przeszukanie kontenera od tylu - szukanie najnowszych elementow
+    try
     {
-        --iter;
-        Component *sign;
-        if((*iter)->check(x_axe,y_axe))
-        {
-            (*iter)->click();
-            sign = *iter;
-            data.erase(iter);
-            data.push_back(sign);//zamieszczenie klikniętego elementu na wierzch stosu
+        std::cout<<"Podaj wspolrzedna x:"<<endl;
+        x_axe=input_int();
+        std::cout<<"Podaj wspolrzedna y:"<<endl;
+        y_axe=input_int();
 
-            return;
+        while (iter != data.begin())//przeszukanie kontenera od tylu - szukanie najnowszych elementow
+        {
+            --iter;
+            Component *sign;
+            if((*iter)->check(x_axe,y_axe))
+            {
+                (*iter)->click();
+                sign = *iter;
+                data.erase(iter);
+                data.push_back(sign);//zamieszczenie klikniętego elementu na wierzch stosu
+
+                return;
+            }
         }
+        throw string("error: component not found");
     }
-    std::cout<<endl<<"error: component not found"<<endl<<endl;
+    catch (string k)//obsluga wyjatkow
+        {
+            std::cout<<endl<<k<<endl<<endl;
+        }
 }
 
 

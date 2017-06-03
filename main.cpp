@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    cout<<"--------------KREATOR_OKIEN--------------"<<endl<<endl;
+    cout<<"--------------KREATOR_OKNA--------------"<<endl<<endl;
     cout<<"Witaj!"<<endl;
    fun_manage();
     return 0;
