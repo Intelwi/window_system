@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1495576959 source:/home/michal/Pulpit/window/main.cpp
+1496519846 source:/home/michal/Pulpit/window/main.cpp
 	<iostream>
 	"window.h"
 	"operating_sys.h"
@@ -23,10 +23,10 @@
 	<assert.h>
 	"window.h"
 
-1495989569 /home/michal/Pulpit/window/operating_sys.h
+1496520792 /home/michal/Pulpit/window/operating_sys.h
 	<iostream>
 
-1495996285 source:/home/michal/Pulpit/window/operating_sys.cpp
+1496521670 source:/home/michal/Pulpit/window/operating_sys.cpp
 	<iostream>
 	<stdio.h>
 	<string.h>

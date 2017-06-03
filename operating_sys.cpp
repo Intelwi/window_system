@@ -6,15 +6,15 @@
 #include <assert.h>
 #include "window.h"
 #include "operating_sys.h"
-!!!
+//!!!
 //wyjątki dac:
 //nie można usunąć jak nie ma elementow
 //nie mozna kliknac jak nie ma elementow
-!!!
+//destrukcja obiektow
+//!!!
 
 vector <Component*> data; //przechowuje dodane komponenty
-vector <Component*>::reverse_iterator iter; //iterator do kontenera
-vector <Component*>::iterator iter1; //iterator do kontenera do usuwania
+vector <Component*>::iterator iter; //iterator do kontenera do usuwania
 
 void input_int_ex(int* ans)//wprowadzenie liczby
 {
@@ -70,6 +70,7 @@ void fun_manage()//interfejs użytkownika -> akcja do wykonania
 
         else if(ans==4)
         {
+            delete_all();
             return;
         }
 
@@ -117,28 +118,13 @@ void choose_component(){//interfejs użytkownika -> komponent do wybrania
 template<class Typ>//utworzenie komponentu
 void create(int ans){
     int x_axe=0, y_axe=0;
-   // if (ans==1)//tworzenie tekstu
-   // {
+
         std::cout<<"Podaj wspołrzedna x: "<<endl;//tworzenie każdego obiektu nowego
         x_axe=input_int();
         std::cout<<"Podaj wspołrzedna y: "<<endl;
         y_axe=input_int();
         Component *ptr = new Typ(x_axe,y_axe);
         data.push_back(ptr);
-   // }
-
-    /*else if (ans==2)//tworzenie przycisku
-    {
-        Component *ptr = new Typ;
-        data.push_back(ptr);
-    }
-
-    else if (ans==3)//tworzenie checkbox
-    {
-        Component *ptr = new Typ;
-        data.push_back(ptr);
-    }
-*/
 }
 
 //------------------------------------------------------------------------
@@ -146,17 +132,24 @@ void create(int ans){
 
 void click_comp()
 {
+    iter = data.end();
     int x_axe=0, y_axe=0;
     std::cout<<"Podaj wspolrzedna x:"<<endl;
     x_axe=input_int();
     std::cout<<"Podaj wspolrzedna y"<<endl;
     y_axe=input_int();
 
-    for(iter=data.rbegin();iter!=data.rend();++iter)//przeszukanie kontenera od tylu - szukanie najnowszych elementow
+    while (iter != data.begin())//przeszukanie kontenera od tylu - szukanie najnowszych elementow
     {
+        --iter;
+        Component *sign;
         if((*iter)->check(x_axe,y_axe))
         {
             (*iter)->click();
+            sign = *iter;
+            data.erase(iter);
+            data.push_back(sign);//zamieszczenie klikniętego elementu na wierzch stosu
+
             return;
         }
     }
@@ -168,23 +161,47 @@ void click_comp()
 
 void delete_comp()
 {
-    iter1 = data.end();
-    int x_axe=0, y_axe=0;
-    std::cout<<"Podaj wspolrzedna x:"<<endl;
-    x_axe=input_int();
-    std::cout<<"Podaj wspolrzedna y"<<endl;
-    y_axe=input_int();
 
-    while (iter1 != data.begin())//przeszukanie kontenera od tylu - szukanie najnowszych elementow
+    iter = data.end();
+    int x_axe=0, y_axe=0;
+    try
     {
-        --iter1;
-        if((*iter1)->check(x_axe,y_axe))
+        if(data.empty()) throw string("Brak komponentow.");//gdy nie ma komponentow
+
+        std::cout<<"Podaj wspolrzedna x:"<<endl;
+        x_axe=input_int();
+        std::cout<<"Podaj wspolrzedna y"<<endl;
+        y_axe=input_int();
+
+        while (iter != data.begin())//przeszukanie kontenera od tylu - szukanie najnowszych elementow
         {
-            delete (*iter1);
-            data.erase(iter1);
-            std::cout<<endl<<"Component erased succesfully!"<<endl<<endl;
-            return;
+            --iter;
+            if((*iter)->check(x_axe,y_axe))
+            {
+                delete (*iter);
+                data.erase(iter);
+                std::cout<<endl<<"Component erased succesfully!"<<endl<<endl;
+                return;
+            }
         }
+
+        throw string("error: component not found");//gdy nie znaleziono
     }
-    std::cout<<endl<<"error: component not found"<<endl<<endl;
+        catch (string k)//obsluga wyjatkow
+        {
+            std::cout<<endl<<k<<endl<<endl;
+        }
+}
+
+void delete_all()
+{
+    iter = data.end();
+    while (iter != data.begin())//przeszukanie kontenera od tylu - szukanie najnowszych elementow
+    {
+        --iter;
+        delete (*iter);//dealokacja wszystkich komponentów
+    }
+
+    data.clear();
+    std::cout<<endl<<"Kreator zamknieto pomyslnie."<<endl;
 }

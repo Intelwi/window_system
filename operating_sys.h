@@ -11,7 +11,9 @@ void add_comp();//dodanie komponentu
 template<class Typ>//utworzenie komponentu
 void create(int ans);
 
-void delete_comp();
+void delete_comp();//kasowanie komponentu
+
+void delete_all();//czyszczenie kontenera
 
 void click_comp();//funkcja klikania
 
