@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="operating__sys_8cpp">
+    <title>operating_sys.cpp File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;limits&gt;</programlisting>
+    <programlisting>#include &lt;stdio.h&gt;</programlisting>
+    <programlisting>#include &lt;string.h&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;assert.h&gt;</programlisting>
+    <programlisting>#include &quot;window.h&quot;</programlisting>
+    <programlisting>#include &quot;operating_sys.h&quot;</programlisting>
+<para>Include dependency diagram for operating_sys.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="operating__sys_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for operating_sys.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="operating__sys_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Zmienne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>vector&lt; <link linkend="classComponent">Component</link> * &gt; <link linkend="operating__sys_8cpp_1aeed90a084c9df14ccd76de382244e019">data</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>vector&lt; <link linkend="classComponent">Component</link> * &gt;::iterator <link linkend="operating__sys_8cpp_1a96b3c4c6338346ae5c84669a57f9eadb">iter</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1a1fb6c8e60497cc915d5bb21a1d2a3e8e">input_int_ex</link> (
+int * ans)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="operating__sys_8cpp_1a3525598719638ffd3709dc4eb2be297c">input_int</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1a05f26d8f47cb9149d154961da6833924">fun_manage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1ac92157a251599e7f5cdcccc80c8a4d8f">add_comp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1a0dcf7e5b8c7e8248648160eedfb70be1">choose_component</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1a527d725cfb55d53a5a7db6226c06dd48">create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1a67f7d9237029a98ff5b20cf0f9d66f9c">click_comp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1ae9ceeeedce8e1f1d1fd387f7b14b8342">delete_comp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8cpp_1a59d1ce49d7f44653c6a50e36166e2157">delete_all</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+    <para>Definition in file /home/michal/Pulpit/window/operating_sys.cpp</para>
+    </simplesect>
+</section>

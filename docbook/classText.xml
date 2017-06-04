@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classText">
+<title>Text class Reference</title>
+<para>
+    <programlisting>#include <link linkend="window_8h">&lt;window.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Text</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classText__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Text</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classText__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Atrybuty prywatne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string text_show</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classText_1a144848b3b22ea514fe2f9c61762af5c3">Text</link> (
+int x_axe, int y_axe, int length_p, int high_p, string text_p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classText_1a068e9e04751fc94f4c45c6cb15af55f4">~Text</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classText_1ab334ff82f41302f83bebf3eaf2516a84">click</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Dokumentacja atrybutów składowych</title>
+        </section>
+            <section xml:id="classText_1a144848b3b22ea514fe2f9c61762af5c3">
+                <title>Text::Text (int x_axe=0, int y_axe=0, int length_p=50, int high_p=30, string text_p=&quot;Hello word!&quot;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classText_1a068e9e04751fc94f4c45c6cb15af55f4">
+                <title>virtual Text::~Text ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classText_1ab334ff82f41302f83bebf3eaf2516a84">
+                <title>void Text::click ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

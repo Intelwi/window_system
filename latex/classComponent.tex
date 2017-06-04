@@ -1,0 +1,120 @@
+\hypertarget{classComponent}{}\section{Dokumentacja klasy Component}
+\label{classComponent}\index{Component@{Component}}
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+
+
+Diagram dziedziczenia dla Component\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Component\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classComponent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classComponent_a24ce4a41eb6f0c89a8d874e19dcc46eb}{Component} (int x\+\_\+axe=0, int y\+\_\+axe=0, int length\+\_\+p=50, int high\+\_\+p=30)
+\item 
+virtual \hyperlink{classComponent_a2e9aa4348314d981f05f67397ad2f872}{$\sim$\+Component} ()
+\item 
+virtual void \hyperlink{classComponent_a247f6f0204b68a7efb9059cf709fe6ea}{click} ()=0
+\item 
+int \hyperlink{classComponent_abbe0759c6c9476750a086fe620d322d7}{check} (int x\+\_\+axe, int y\+\_\+axe)
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classComponent_a3fe84cea3e41ac363349595e1a92a5b6}{x}
+\item 
+int \hyperlink{classComponent_a3cbb2a0f076a05810ad64ac22ea10402}{y}
+\item 
+int \hyperlink{classComponent_a4d25a50d4bfa8fde7f75478eadcd5661}{length}
+\item 
+int \hyperlink{classComponent_aff8a286217041306964f2207b86522b3}{high}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\index{Component@{Component}!Component@{Component}}
+\index{Component@{Component}!Component@{Component}}
+\subsubsection[{\texorpdfstring{Component(int x\+\_\+axe=0, int y\+\_\+axe=0, int length\+\_\+p=50, int high\+\_\+p=30)}{Component(int x_axe=0, int y_axe=0, int length_p=50, int high_p=30)}}]{\setlength{\rightskip}{0pt plus 5cm}Component\+::\+Component (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+axe = {\ttfamily 0}, }
+\item[{int}]{y\+\_\+axe = {\ttfamily 0}, }
+\item[{int}]{length\+\_\+p = {\ttfamily 50}, }
+\item[{int}]{high\+\_\+p = {\ttfamily 30}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classComponent_a24ce4a41eb6f0c89a8d874e19dcc46eb}{}\label{classComponent_a24ce4a41eb6f0c89a8d874e19dcc46eb}
+\index{Component@{Component}!````~Component@{$\sim$\+Component}}
+\index{````~Component@{$\sim$\+Component}!Component@{Component}}
+\subsubsection[{\texorpdfstring{$\sim$\+Component()}{~Component()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Component\+::$\sim$\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classComponent_a2e9aa4348314d981f05f67397ad2f872}{}\label{classComponent_a2e9aa4348314d981f05f67397ad2f872}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\index{Component@{Component}!check@{check}}
+\index{check@{check}!Component@{Component}}
+\subsubsection[{\texorpdfstring{check(int x\+\_\+axe, int y\+\_\+axe)}{check(int x_axe, int y_axe)}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::check (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+axe, }
+\item[{int}]{y\+\_\+axe}
+\end{DoxyParamCaption}
+)}\hypertarget{classComponent_abbe0759c6c9476750a086fe620d322d7}{}\label{classComponent_abbe0759c6c9476750a086fe620d322d7}
+\index{Component@{Component}!click@{click}}
+\index{click@{click}!Component@{Component}}
+\subsubsection[{\texorpdfstring{click()=0}{click()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Component\+::click (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classComponent_a247f6f0204b68a7efb9059cf709fe6ea}{}\label{classComponent_a247f6f0204b68a7efb9059cf709fe6ea}
+
+
+Implementowany w \hyperlink{classInput__table_ac48806d103ed557c4b9a4eac4a021cf3}{Input\+\_\+table}, \hyperlink{classCheckbox_afd75946a43da1dcba8e6f04f00df34ee}{Checkbox}, \hyperlink{classButton_a2fc33ec22217562b28ac6f02bda26c6e}{Button} i \hyperlink{classText_ab334ff82f41302f83bebf3eaf2516a84}{Text}.
+
+
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a247f6f0204b68a7efb9059cf709fe6ea_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\index{Component@{Component}!high@{high}}
+\index{high@{high}!Component@{Component}}
+\subsubsection[{\texorpdfstring{high}{high}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::high\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classComponent_aff8a286217041306964f2207b86522b3}{}\label{classComponent_aff8a286217041306964f2207b86522b3}
+\index{Component@{Component}!length@{length}}
+\index{length@{length}!Component@{Component}}
+\subsubsection[{\texorpdfstring{length}{length}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::length\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classComponent_a4d25a50d4bfa8fde7f75478eadcd5661}{}\label{classComponent_a4d25a50d4bfa8fde7f75478eadcd5661}
+\index{Component@{Component}!x@{x}}
+\index{x@{x}!Component@{Component}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::x\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classComponent_a3fe84cea3e41ac363349595e1a92a5b6}{}\label{classComponent_a3fe84cea3e41ac363349595e1a92a5b6}
+\index{Component@{Component}!y@{y}}
+\index{y@{y}!Component@{Component}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::y\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classComponent_a3cbb2a0f076a05810ad64ac22ea10402}{}\label{classComponent_a3cbb2a0f076a05810ad64ac22ea10402}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{window_8h}{window.\+h}\item 
+\hyperlink{window_8cpp}{window.\+cpp}\end{DoxyCompactItemize}

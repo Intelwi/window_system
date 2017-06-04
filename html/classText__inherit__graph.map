@@ -1,0 +1,6 @@
+<map id="Text" name="Text">
+<area shape="rect" id="node3" href="$classButton.html" title="{Button\n||+ Button()\l+ ~Button()\l+ click()\l}" alt="" coords="5,381,93,487"/>
+<area shape="rect" id="node4" href="$classCheckbox.html" title="{Checkbox\n|&#45; if_ticked\l|+ Checkbox()\l+ ~Checkbox()\l+ click()\l}" alt="" coords="117,381,227,487"/>
+<area shape="rect" id="node5" href="$classInput__table.html" title="{Input_table\n|&#45; input_txt\l|+ Input_table()\l+ ~Input_table()\l+ click()\l+ type_in()\l}" alt="" coords="251,373,365,495"/>
+<area shape="rect" id="node2" href="$classComponent.html" title="{Component\n|&#45; x\l&#45; y\l&#45; length\l&#45; high\l|+ Component()\l+ ~Component()\l+ click()\l+ check()\l}" alt="" coords="113,5,231,171"/>
+</map>

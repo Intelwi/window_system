@@ -8,7 +8,6 @@
 #include "window.h"
 #include "operating_sys.h"
 
-//dodac pole dowpisywania tekstu
 //dodac przesuwanie komponentu po np podwojnym kliknieciu
 
 vector <Component*> data; //przechowuje dodane komponenty

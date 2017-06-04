@@ -1,0 +1,10 @@
+<map id="input_int_ex" name="input_int_ex">
+<area shape="rect" id="node2" href="$operating__sys_8h.html#a3525598719638ffd3709dc4eb2be297c" title="input_int" alt="" coords="145,96,216,122"/>
+<area shape="rect" id="node3" href="$operating__sys_8h.html#a05f26d8f47cb9149d154961da6833924" title="fun_manage" alt="" coords="591,96,684,122"/>
+<area shape="rect" id="node5" href="$operating__sys_8h.html#a0dcf7e5b8c7e8248648160eedfb70be1" title="choose_component" alt="" coords="264,45,399,72"/>
+<area shape="rect" id="node7" href="$operating__sys_8h.html#a527d725cfb55d53a5a7db6226c06dd48" title="create" alt="" coords="302,96,361,122"/>
+<area shape="rect" id="node8" href="$operating__sys_8h.html#a67f7d9237029a98ff5b20cf0f9d66f9c" title="click_comp" alt="" coords="451,133,539,160"/>
+<area shape="rect" id="node9" href="$operating__sys_8h.html#ae9ceeeedce8e1f1d1fd387f7b14b8342" title="delete_comp" alt="" coords="447,190,543,217"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="732,96,783,122"/>
+<area shape="rect" id="node6" href="$operating__sys_8h.html#ac92157a251599e7f5cdcccc80c8a4d8f" title="add_comp" alt="" coords="453,57,536,84"/>
+</map>

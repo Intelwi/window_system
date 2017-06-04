@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classComponent">
+<title>Component class Reference</title>
+<para>
+    <programlisting>#include <link linkend="window_8h">&lt;window.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Component</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classComponent__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Component</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classComponent__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Atrybuty prywatne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int x</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int y</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int length</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int high</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classComponent_1a24ce4a41eb6f0c89a8d874e19dcc46eb">Component</link> (
+int x_axe, int y_axe, int length_p, int high_p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classComponent_1a2e9aa4348314d981f05f67397ad2f872">~Component</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classComponent_1a247f6f0204b68a7efb9059cf709fe6ea">click</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="classComponent_1abbe0759c6c9476750a086fe620d322d7">check</link> (
+int x_axe, int y_axe)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Dokumentacja atrybutów składowych</title>
+        </section>
+            <section xml:id="classComponent_1a24ce4a41eb6f0c89a8d874e19dcc46eb">
+                <title>Component::Component (int x_axe=0, int y_axe=0, int length_p=50, int high_p=30)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classComponent_1a2e9aa4348314d981f05f67397ad2f872">
+                <title>virtual Component::~Component ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classComponent_1a247f6f0204b68a7efb9059cf709fe6ea">
+                <title>virtual void Component::click ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classComponent_1abbe0759c6c9476750a086fe620d322d7">
+                <title>int Component::check (int x_axe, int y_axe)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

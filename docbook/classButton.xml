@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classButton">
+<title>Button class Reference</title>
+<para>
+    <programlisting>#include <link linkend="window_8h">&lt;window.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Button</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classButton__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Button</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classButton__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classButton_1affc1899d8e846ffda38377637d675d29">Button</link> (
+int x_axe, int y_axe, int length_p, int high_p, string tekst_p)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classButton_1a2a001eb9c3cc8ae54768a850dd345002">~Button</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classButton_1a2fc33ec22217562b28ac6f02bda26c6e">click</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classButton_1affc1899d8e846ffda38377637d675d29">
+                <title>Button::Button (int x_axe=0, int y_axe=0, int length_p=20, int high_p=15, string tekst_p=&quot;Click Button&quot;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classButton_1a2a001eb9c3cc8ae54768a850dd345002">
+                <title>Button::~Button ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classButton_1a2fc33ec22217562b28ac6f02bda26c6e">
+                <title>void Button::click ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

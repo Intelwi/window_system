@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="operating__sys_8h">
+    <title>operating_sys.h File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+<para>Include dependency diagram for operating_sys.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="operating__sys_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for operating_sys.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="operating__sys_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Funkcje</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="operating__sys_8h_1a3525598719638ffd3709dc4eb2be297c">input_int</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1a1fb6c8e60497cc915d5bb21a1d2a3e8e">input_int_ex</link> (
+int * ans)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1a0dcf7e5b8c7e8248648160eedfb70be1">choose_component</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1ac92157a251599e7f5cdcccc80c8a4d8f">add_comp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1a527d725cfb55d53a5a7db6226c06dd48">create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1ae9ceeeedce8e1f1d1fd387f7b14b8342">delete_comp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1a59d1ce49d7f44653c6a50e36166e2157">delete_all</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1a67f7d9237029a98ff5b20cf0f9d66f9c">click_comp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="operating__sys_8h_1a05f26d8f47cb9149d154961da6833924">fun_manage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Opis szczegółowy</title>
+    <para>Definition in file /home/michal/Pulpit/window/operating_sys.h</para>
+    </simplesect>
+</section>

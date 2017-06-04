@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classCheckbox">
+<title>Checkbox class Reference</title>
+<para>
+    <programlisting>#include <link linkend="window_8h">&lt;window.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for Checkbox</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classCheckbox__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Checkbox</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classCheckbox__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Atrybuty prywatne</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool if_ticked</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCheckbox_1a44d2ffeb1990a715b7d99f7ad48d36cf">Checkbox</link> (
+int x_axe, int y_axe, int length_p, int high_p, string tekst_p, bool if_ticked_par)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classCheckbox_1a828c1436e32c8be0d9d395286d8e6bfe">~Checkbox</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="classCheckbox_1afd75946a43da1dcba8e6f04f00df34ee">click</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Dokumentacja atrybutów składowych</title>
+        </section>
+            <section xml:id="classCheckbox_1a44d2ffeb1990a715b7d99f7ad48d36cf">
+                <title>Checkbox::Checkbox (int x_axe=0, int y_axe=0, int length_p=8, int high_p=8, string tekst_p=&quot;Tick Checkbox&quot;, bool if_ticked_par=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classCheckbox_1a828c1436e32c8be0d9d395286d8e6bfe">
+                <title>Checkbox::~Checkbox ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classCheckbox_1afd75946a43da1dcba8e6f04f00df34ee">
+                <title>void Checkbox::click ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>
