@@ -1,6 +1,7 @@
 <map id="Component" name="Component">
-<area shape="rect" id="node2" href="$classCheckbox.html" title="{Checkbox\n|&#45; if_ticked\l|+ Checkbox()\l+ ~Checkbox()\l+ click()\l}" alt="" coords="5,219,115,325"/>
-<area shape="rect" id="node3" href="$classText.html" title="{Text\n|# text_show\l|+ Text()\l+ ~Text()\l+ click()\l}" alt="" coords="139,219,232,325"/>
-<area shape="rect" id="node4" href="$classButton.html" title="{Button\n||+ Button()\l+ ~Button()\l+ click()\l}" alt="" coords="79,381,167,487"/>
-<area shape="rect" id="node5" href="$classInput__table.html" title="{Input_table\n||+ Input_table()\l+ ~Input_table()\l+ click()\l+ type_in()\l}" alt="" coords="191,373,305,495"/>
+<area shape="rect" id="node2" href="$classCheckbox.html" title="{Checkbox\n|&#45; if_ticked\l|+ Checkbox()\l+ ~Checkbox()\l+ click()\l}" alt="" coords="5,226,115,333"/>
+<area shape="rect" id="node3" href="$classText.html" title="{Text\n|# text_show\l|+ Text()\l+ ~Text()\l+ click()\l+ return_value()\l}" alt="" coords="139,219,253,340"/>
+<area shape="rect" id="node4" href="$classButton.html" title="{Button\n||+ Button()\l+ ~Button()\l+ click()\l}" alt="" coords="27,395,115,502"/>
+<area shape="rect" id="node5" href="$classInput__table.html" title="{Input_table\n||+ Input_table()\l+ ~Input_table()\l+ click()\l+ type_in()\l}" alt="" coords="139,388,253,509"/>
+<area shape="rect" id="node6" href="$classList.html" title="{List\n|&#45; lista\l|+ List()\l+ ~List()\l+ click()\l+ choose()\l}" alt="" coords="278,388,362,509"/>
 </map>

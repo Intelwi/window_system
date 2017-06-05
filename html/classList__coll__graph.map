@@ -1,0 +1,4 @@
+<map id="List" name="List">
+<area shape="rect" id="node2" href="$classText.html" title="{Text\n|# text_show\l|+ Text()\l+ ~Text()\l+ click()\l+ return_value()\l}" alt="" coords="7,220,121,341"/>
+<area shape="rect" id="node3" href="$classComponent.html" title="{Component\n|# x\l# y\l# length\l# high\l|+ Component()\l+ ~Component()\l+ click()\l+ check()\l}" alt="" coords="5,5,123,171"/>
+</map>

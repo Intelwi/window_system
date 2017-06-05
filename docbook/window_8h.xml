@@ -64,6 +64,13 @@
                     </listitem>
                 </itemizedlist>
             </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classList">List</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </section>
     <simplesect>
         <title>Opis szczegółowy</title>

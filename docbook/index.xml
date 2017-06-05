@@ -13,6 +13,7 @@
         <xi:include href="classCheckbox.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="classComponent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="classInput__table.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classList.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="classText.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>

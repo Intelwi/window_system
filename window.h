@@ -10,7 +10,7 @@ using namespace std;
 
 class Component
 {
-    private:
+    protected:
     int x; //wspolrzedna x komponentu (dolny lewy rog)
     int y; //wspolrzedna y komponentu (dolny lewy rog)
     int length; //długość komponentu
@@ -39,6 +39,7 @@ class Text :public Component
 
         virtual ~Text(){}
         virtual void click();
+        virtual string return_value();
 };
 
 
@@ -85,4 +86,20 @@ class Input_table :public Text
 
         virtual void click();
         void type_in();
+};
+
+
+//-----------------LIST-----------------------------------------------------------------------------------
+
+class List :public Text
+{
+    Text* lista[3];
+    public:
+        List (int x_axe=0, int y_axe=0, int length_p=20, int high_p=8, string tekst_p = "Empty"):
+        Text(x_axe,y_axe,length_p,high_p,tekst_p){}
+
+        ~List(){}
+
+        virtual void click();
+        void choose();
 };

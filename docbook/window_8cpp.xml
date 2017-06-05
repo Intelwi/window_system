@@ -3,6 +3,7 @@
     <title>window.cpp File Reference</title>
     <programlisting>#include &lt;iostream&gt;</programlisting>
     <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &lt;limits&gt;</programlisting>
     <programlisting>#include &quot;window.h&quot;</programlisting>
 <para>Include dependency diagram for window.cpp</para>
 <para>

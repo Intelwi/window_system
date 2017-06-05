@@ -4,15 +4,16 @@
 	"window.h"
 	"operating_sys.h"
 
-1496669883 /home/michal/Pulpit/window/window.h
+1496676045 /home/michal/Pulpit/window/window.h
 	<iostream>
 	<stdio.h>
 	<string.h>
 	<assert.h>
 
-1496669640 source:/home/michal/Pulpit/window/window.cpp
+1496677517 source:/home/michal/Pulpit/window/window.cpp
 	<iostream>
 	<vector>
+	<limits>
 	"window.h"
 
 1495576326 /home/michal/Pulpit/window/window.cpp
@@ -26,7 +27,7 @@
 1496528548 /home/michal/Pulpit/window/operating_sys.h
 	<iostream>
 
-1496529070 source:/home/michal/Pulpit/window/operating_sys.cpp
+1496675750 source:/home/michal/Pulpit/window/operating_sys.cpp
 	<iostream>
 	<limits>
 	<stdio.h>

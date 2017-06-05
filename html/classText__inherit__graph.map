@@ -1,5 +1,6 @@
 <map id="Text" name="Text">
-<area shape="rect" id="node3" href="$classButton.html" title="{Button\n||+ Button()\l+ ~Button()\l+ click()\l}" alt="" coords="5,381,93,487"/>
-<area shape="rect" id="node4" href="$classInput__table.html" title="{Input_table\n||+ Input_table()\l+ ~Input_table()\l+ click()\l+ type_in()\l}" alt="" coords="117,373,232,495"/>
-<area shape="rect" id="node2" href="$classComponent.html" title="{Component\n|&#45; x\l&#45; y\l&#45; length\l&#45; high\l|+ Component()\l+ ~Component()\l+ click()\l+ check()\l}" alt="" coords="53,5,171,171"/>
+<area shape="rect" id="node3" href="$classButton.html" title="{Button\n||+ Button()\l+ ~Button()\l+ click()\l}" alt="" coords="5,395,93,502"/>
+<area shape="rect" id="node4" href="$classInput__table.html" title="{Input_table\n||+ Input_table()\l+ ~Input_table()\l+ click()\l+ type_in()\l}" alt="" coords="117,388,232,509"/>
+<area shape="rect" id="node5" href="$classList.html" title="{List\n|&#45; lista\l|+ List()\l+ ~List()\l+ click()\l+ choose()\l}" alt="" coords="257,388,341,509"/>
+<area shape="rect" id="node2" href="$classComponent.html" title="{Component\n|# x\l# y\l# length\l# high\l|+ Component()\l+ ~Component()\l+ click()\l+ check()\l}" alt="" coords="116,5,233,171"/>
 </map>

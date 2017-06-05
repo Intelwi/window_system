@@ -62,6 +62,14 @@ int x_axe, int y_axe, int length_p, int high_p, string text_p)</para>
                     </listitem>
                 </itemizedlist>
             </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual string <link linkend="classText_1a6b842bda6a161716fc5aa845fc56187d">return_value</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </section>
         <section>
             <title>Dokumentacja atrybutów składowych</title>
@@ -76,6 +84,10 @@ int x_axe, int y_axe, int length_p, int high_p, string text_p)</para>
             </section>
             <section xml:id="classText_1ab334ff82f41302f83bebf3eaf2516a84">
                 <title>void Text::click ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classText_1a6b842bda6a161716fc5aa845fc56187d">
+                <title>string Text::return_value ()</title> <emphasis></emphasis>
                 
             </section>
 </section>
