@@ -58,14 +58,15 @@ class Button :public Text
         virtual void click();
 };
 
+
 //-------------CHECKBOX----------------------------------------------------------------------------------
 
-class Checkbox :public Text// a moze moze dziedziczyc po przycisku?
+class Checkbox :public Button
 {
     bool if_ticked; //info czy jest zaznaczony
-   public:
+    public:
         Checkbox (int x_axe=0, int y_axe=0, int length_p=8, int high_p=8,string tekst_p = "Tick Checkbox",bool if_ticked_par = false):
-        Text(x_axe,y_axe,length_p,high_p,tekst_p), if_ticked(if_ticked_par){}
+        Button(x_axe,y_axe,length_p,high_p,tekst_p), if_ticked(if_ticked_par){}
 
         ~Checkbox(){}
 

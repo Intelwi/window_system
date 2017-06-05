@@ -4,7 +4,7 @@
 	"window.h"
 	"operating_sys.h"
 
-1496528789 /home/michal/Pulpit/window/window.h
+1496661805 /home/michal/Pulpit/window/window.h
 	<iostream>
 	<stdio.h>
 	<string.h>
@@ -26,7 +26,7 @@
 1496528548 /home/michal/Pulpit/window/operating_sys.h
 	<iostream>
 
-1496528711 source:/home/michal/Pulpit/window/operating_sys.cpp
+1496529070 source:/home/michal/Pulpit/window/operating_sys.cpp
 	<iostream>
 	<limits>
 	<stdio.h>
