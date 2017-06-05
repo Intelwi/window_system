@@ -97,8 +97,8 @@ void List::choose()
         else break;
     }
 
-    if(ans==0) text_show = lista[0]->return_value();
-    else if (ans==1) text_show = return_value();
-    else text_show = lista[2]->return_value();
+    if(ans==0) text_show = lista[0]->return_value();//zapisanie wybranej opcji
+    else if (ans==1) text_show = return_value();//zapisanie
+    else text_show = lista[2]->return_value();//zapisanie
 
 }

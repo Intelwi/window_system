@@ -88,7 +88,7 @@ void add_comp()//dodanie komponentu
 void choose_component(){//interfejs użytkownika -> komponent do wybrania
      int ans;
     while(1){
-        std::cout<<"Wybierz komponent do edycji:"<<endl<<"1.Pole z tekstem"<<endl<<"2.Przycisk"<<endl<<"3.Checkbox"<<endl<<"4.Input label"<<endl<<"5.Lista"<<endl;
+        std::cout<<"Wybierz komponent do edycji:"<<endl<<"1.Pole z tekstem"<<endl<<"2.Przycisk"<<endl<<"3.Checkbox"<<endl<<"4.Pole do wpisania tekstu"<<endl<<"5.Lista"<<endl;
 
         ans = input_int();
 

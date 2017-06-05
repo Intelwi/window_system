@@ -10,7 +10,7 @@
 	<string.h>
 	<assert.h>
 
-1496677517 source:/home/michal/Pulpit/window/window.cpp
+1496681870 source:/home/michal/Pulpit/window/window.cpp
 	<iostream>
 	<vector>
 	<limits>
@@ -27,7 +27,7 @@
 1496528548 /home/michal/Pulpit/window/operating_sys.h
 	<iostream>
 
-1496675750 source:/home/michal/Pulpit/window/operating_sys.cpp
+1496687624 source:/home/michal/Pulpit/window/operating_sys.cpp
 	<iostream>
 	<limits>
 	<stdio.h>
