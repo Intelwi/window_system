@@ -25,6 +25,19 @@ class Component
 };
 
 
+//-------------IMAGE-------------------------------------------------------------------------------------
+
+class Text :public Component
+{
+    string text_show; //tekst do wyświetlania
+
+   public:
+        Text (int x_axe=0, int y_axe=0, int length_p=50, int high_p=30, string text_p = "Hello word!"):
+        Component(x_axe,y_axe,length_p,high_p), text_show(text_p){}
+
+        virtual ~Text(){}
+        virtual void click();
+};
 
 
 //-------------TEKST-------------------------------------------------------------------------------------
