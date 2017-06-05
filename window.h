@@ -25,26 +25,12 @@ class Component
 };
 
 
-//-------------IMAGE-------------------------------------------------------------------------------------
-
-class Text :public Component
-{
-    string text_show; //tekst do wyświetlania
-
-   public:
-        Text (int x_axe=0, int y_axe=0, int length_p=50, int high_p=30, string text_p = "Hello word!"):
-        Component(x_axe,y_axe,length_p,high_p), text_show(text_p){}
-
-        virtual ~Text(){}
-        virtual void click();
-};
-
-
 //-------------TEKST-------------------------------------------------------------------------------------
 
 
 class Text :public Component
 {
+   protected:
     string text_show; //tekst do wyświetlania
 
    public:
@@ -74,12 +60,12 @@ class Button :public Text
 
 //-------------CHECKBOX----------------------------------------------------------------------------------
 
-class Checkbox :public Button
+class Checkbox :public Component
 {
     bool if_ticked; //info czy jest zaznaczony
     public:
-        Checkbox (int x_axe=0, int y_axe=0, int length_p=8, int high_p=8,string tekst_p = "Tick Checkbox",bool if_ticked_par = false):
-        Button(x_axe,y_axe,length_p,high_p,tekst_p), if_ticked(if_ticked_par){}
+        Checkbox (int x_axe=0, int y_axe=0, int length_p=8, int high_p=8,bool if_ticked_par = false):
+        Component(x_axe,y_axe,length_p,high_p), if_ticked(if_ticked_par){}
 
         ~Checkbox(){}
 
@@ -91,8 +77,6 @@ class Checkbox :public Button
 
 class Input_table :public Text
 {
-    string input_txt;
-
    public:
         Input_table (int x_axe=0, int y_axe=0, int length_p=30, int high_p=10,string tekst_p = "Type sentence"):
         Text(x_axe,y_axe,length_p,high_p,tekst_p){}

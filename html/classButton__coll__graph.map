@@ -1,4 +1,4 @@
 <map id="Button" name="Button">
-<area shape="rect" id="node2" href="$classText.html" title="{Text\n|&#45; text_show\l|+ Text()\l+ ~Text()\l+ click()\l}" alt="" coords="19,219,109,325"/>
+<area shape="rect" id="node2" href="$classText.html" title="{Text\n|# text_show\l|+ Text()\l+ ~Text()\l+ click()\l}" alt="" coords="17,219,111,325"/>
 <area shape="rect" id="node3" href="$classComponent.html" title="{Component\n|&#45; x\l&#45; y\l&#45; length\l&#45; high\l|+ Component()\l+ ~Component()\l+ click()\l+ check()\l}" alt="" coords="5,5,123,171"/>
 </map>

@@ -41,8 +41,8 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para> <link linkend="classCheckbox_1a44d2ffeb1990a715b7d99f7ad48d36cf">Checkbox</link> (
-int x_axe, int y_axe, int length_p, int high_p, string tekst_p, bool if_ticked_par)</para>
+                        <para> <link linkend="classCheckbox_1a0cf04b4e75ccdde26151a4c8ee30064d">Checkbox</link> (
+int x_axe, int y_axe, int length_p, int high_p, bool if_ticked_par)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -66,8 +66,8 @@ int x_axe, int y_axe, int length_p, int high_p, string tekst_p, bool if_ticked_p
         <section>
             <title>Dokumentacja atrybutów składowych</title>
         </section>
-            <section xml:id="classCheckbox_1a44d2ffeb1990a715b7d99f7ad48d36cf">
-                <title>Checkbox::Checkbox (int x_axe=0, int y_axe=0, int length_p=8, int high_p=8, string tekst_p=&quot;Tick Checkbox&quot;, bool if_ticked_par=false)</title> <emphasis></emphasis>
+            <section xml:id="classCheckbox_1a0cf04b4e75ccdde26151a4c8ee30064d">
+                <title>Checkbox::Checkbox (int x_axe=0, int y_axe=0, int length_p=8, int high_p=8, bool if_ticked_par=false)</title> <emphasis></emphasis>
                 
             </section>
             <section xml:id="classCheckbox_1a828c1436e32c8be0d9d395286d8e6bfe">
